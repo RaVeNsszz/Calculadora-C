@@ -4,9 +4,19 @@
 #include <ctype.h>
 #include <string.h>
 #include "enum/operacoes.h"
+#include "./func/funcoes.h" 
 
 
 int main(){
+
+    float a = 10, b = 5;
+    printf("Soma: %.2f\n", somar(a, b));
+    printf("Subtracao: %.2f\n", subtrair(a, b));
+    printf("Multiplicacao: %.2f\n", multiplicar(a, b));
+    printf("Divisao: %.2f\n", dividir(a, b));
+    
+
+    /*
     enum Operacao op = SOMA;
     do{
         printf("\n===== CALCULADORA =====\n");
@@ -27,6 +37,6 @@ int main(){
             break;
         }
     } while (op != -1);
-
+    */    
     return 0;
 }
